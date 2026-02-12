@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>ValueSet Expansion Counts</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; }
+  .report-info { background-color: #f9f9f9; border-left: 4px solid #4CAF50; padding: 10px; margin-bottom: 20px; }
+  .report-info p { margin: 5px 0; font-size: 14px; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+  th { background-color: #4CAF50; color: white; }
+  tr:nth-child(even) { background-color: #f2f2f2; }
+  .trending-down { background-color: #ffcccc; color: red; font-weight: bold; }
+  .version-col { text-align: center; }
+</style>
+</head>
+<body>
+<h1>ValueSet Expansion Counts - Trending Analysis</h1>
+<div class='report-info'>
+<p><strong>FHIR IGs:</strong> hl7.fhir.au.base#6.0.0, hl7.fhir.au.core#2.0.0, hl7.fhir.au.ereq#dev, hl7.fhir.au.ps#dev</p>
+<p><strong>Terminology Server:</strong> https://tx.ontoserver.csiro.au/fhir</p>
+<p><strong>Versions Compared:</strong> 12 months</p>
+<p><strong>Version Range:</strong> 20260131 to 20250331</p>
+</div>
+<table>
+<tr>
+<th>ValueSet Name</th>
+<th>ValueSet URL</th>
+<th>Structure Definitions</th>
+<th class='version-col'>20250331</th>
+<th class='version-col'>20250430</th>
+<th class='version-col'>20250531</th>
+<th class='version-col'>20250630</th>
+<th class='version-col'>20250731</th>
+<th class='version-col'>20250831</th>
+<th class='version-col'>20250930</th>
+<th class='version-col'>20251031</th>
+<th class='version-col'>20251130</th>
+<th class='version-col'>20251231</th>
+<th class='version-col'>20260131</th>
+</tr>
+<tr>
+<td>Common Languages in Australia</td>
+<td>https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2</td>
+<td><a href='http://hl7.org.au/fhir/StructureDefinition/au-patient'>AUBasePatient</a></td>
+<td class='version-col'>337</td>
+<td class='version-col'>337</td>
+<td class='version-col'>337</td>
+<td class='version-col'>337</td>
+<td class='version-col'>337</td>
+<td class='version-col'>337</td>
+<td class='version-col'>337</td>
+<td class='version-col'>337</td>
+<td class='version-col'>337</td>
+<td class='version-col'>337</td>
+<td class='version-col'>337</td>
+</tr>
+<tr>
+<td>Contact Relationship Type</td>
+<td>https://healthterminologies.gov.au/fhir/ValueSet/contact-relationship-type-3</td>
+<td><a href='http://hl7.org.au/fhir/StructureDefinition/au-patient'>AUBasePatient</a></td>
+<td class='version-col'>16</td>
+<td class='version-col'>16</td>
+<td class='version-col'>16</td>
+<td class='version-col'>16</td>
+<td class='version-col'>16</td>
+<td class='version-col'>16</td>
+<td class='version-col'>16</td>
+<td class='version-col'>16</td>
+<td class='version-col'>16</td>
+<td class='version-col'>16</td>
+<td class='version-col'>16</td>
+</tr>
+<tr>
+<td>Individual Healthcare Identifier Status</td>
+<td>https://healthterminologies.gov.au/fhir/ValueSet/ihi-status-1</td>
+<td><a href='http://hl7.org.au/fhir/StructureDefinition/ihi-status'>IHIStatus</a></td>
+<td class='version-col'>5</td>
+<td class='version-col'>5</td>
+<td class='version-col'>5</td>
+<td class='version-col'>5</td>
+<td class='version-col'>5</td>
+<td class='version-col'>5</td>
+<td class='version-col'>5</td>
+<td class='version-col'>5</td>
+<td class='version-col'>5</td>
+<td class='version-col'>5</td>
+<td class='version-col'>5</td>
+</tr>
+<tr>
+<td>Medicine Substitution Reason</td>
+<td>https://healthterminologies.gov.au/fhir/ValueSet/medicine-substitution-reason-1</td>
+<td><a href='http://hl7.org.au/fhir/StructureDefinition/au-medicationrequest'>AUBaseMedicationRequest</a></td>
+<td class='version-col'>9</td>
+<td class='version-col'>9</td>
+<td class='version-col'>9</td>
+<td class='version-col'>9</td>
+<td class='version-col'>9</td>
+<td class='version-col'>9</td>
+<td class='version-col'>9</td>
+<td class='version-col'>9</td>
+<td class='version-col'>9</td>
+<td class='version-col'>9</td>
+<td class='version-col'>9</td>
+</tr>
+<tr>
+<td>Reason for Request</td>
+<td>https://healthterminologies.gov.au/fhir/ValueSet/reason-for-request-1</td>
+<td><a href='http://hl7.org.au/fhir/StructureDefinition/au-medicationrequest'>AUBaseMedicationRequest</a></td>
+<td class='version-col'>187655</td>
+<td class='version-col'>188840</td>
+<td class='version-col'>188886</td>
+<td class='version-col'>190491</td>
+<td class='version-col'>191227</td>
+<td class='version-col'>191552</td>
+<td class='version-col'>192384</td>
+<td class='version-col'>192825</td>
+<td class='version-col'>192802</td>
+<td class='version-col'>192968</td>
+<td class='version-col'>193118</td>
+</tr>
+</table>
+<p style='margin-top: 20px; font-size: 12px;'>
+<strong>Legend:</strong> Cells highlighted in red indicate a decrease in expansion count from the previous version.
+</p>
+</body>
+</html>
