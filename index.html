@@ -104,27 +104,37 @@
     <div class="container">
         <div class="header">
             <h1>NCTS ValueSet Analysis Dashboard</h1>
-            <p>Comprehensive analysis of NCTS ValueSet expansions across SNOMED CT AU releases</p>
+            <p>Comprehensive analysis of NCTS ValueSet expansions across NCTS releases</p>
         </div>
         
         <div class="report-info">
             <p><strong>FHIR IGs:</strong> hl7.fhir.au.base#6.0.0, hl7.fhir.au.core#2.0.0, hl7.fhir.au.ereq#dev, hl7.fhir.au.ps#dev</p>
             <p><strong>Terminology Server:</strong> https://tx.ontoserver.csiro.au/fhir</p>
             <p><strong>Versions Compared:</strong> 12 months</p>
-            <p><strong>Generated:</strong> 2026-02-13 09:25:11</p>
+            <p><strong>Generated:</strong> 2026-02-13 11:02:37</p>
         </div>
         
         <div class="nav-tabs">
-            <button class="tab-button active" onclick="openTab(event, 'chart')">📊 Trend Chart</button>
-            <button class="tab-button" onclick="openTab(event, 'table')">📋 Data Table</button>
+            <button class="tab-button active" onclick="openTab(event, 'table')">📋 Data Table</button>
+            <button class="tab-button" onclick="openTab(event, 'chart-low')">📊 Low Count (<1K)</button>
+            <button class="tab-button" onclick="openTab(event, 'chart-medium')">📈 Medium Count (1K-50K)</button>
+            <button class="tab-button" onclick="openTab(event, 'chart-high')">📉 High Count (>50K)</button>
         </div>
         
-        <div id="chart" class="tab-content active">
-            <iframe src="chart.html" title="Chart View"></iframe>
-        </div>
-        
-        <div id="table" class="tab-content">
+        <div id="table" class="tab-content active">
             <iframe src="table.html" title="Table View"></iframe>
+        </div>
+        
+        <div id="chart-low" class="tab-content">
+            <iframe src="chart-low.html" title="Low Count Chart"></iframe>
+        </div>
+        
+        <div id="chart-medium" class="tab-content">
+            <iframe src="chart-medium.html" title="Medium Count Chart"></iframe>
+        </div>
+        
+        <div id="chart-high" class="tab-content">
+            <iframe src="chart-high.html" title="High Count Chart"></iframe>
         </div>
         
         <div class="footer">
